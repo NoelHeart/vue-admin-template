@@ -1,0 +1,44 @@
+import request from '@/utils/request'
+
+// 收支图
+export function getInComeChart() {
+  return request({
+    url: '/bigScreen/getInComeChart',
+    method: 'get'
+  })
+}
+// 综合耗能
+export function getTotalHaoNeng() {
+  return request({
+    url: '/bigScreen/getTotalHaoNeng',
+    method: 'get'
+  })
+}
+// 饼状图
+export function getBuildUseData() {
+  return request({
+    url: '/bigScreen/getBuildUseData',
+    method: 'get'
+  })
+}
+// 昨日今日折线图
+export function getYesTodUseData() {
+  return request({
+    url: '/bigScreen/getYesTodUseData',
+    method: 'get'
+  })
+}
+// 12月用水用电
+export function getEmWm12Data() {
+  return request({
+    url: '/bigScreen/getEmWm12Data',
+    method: 'get'
+  })
+}
+// 多饼图
+export function getNumDeviceData() {
+  return request({
+    url: '/bigScreen/getNumDeviceData',
+    method: 'get'
+  })
+}
